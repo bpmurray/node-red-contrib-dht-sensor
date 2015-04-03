@@ -4,15 +4,15 @@
     "email": "brendanpmurray@gmail.com",
     "url": "http://coolfore.com/"
   },
-  "name": "node-red-dht-sensor",
-  "version": "0.0.9",
+  "name": "node-red-contrib-dht-sensor",
+  "version": "0.0.10",
   "description": "Node-red node for node-dht-sensor",
   "dependencies": {
      "node-dht-sensor": "0.0.6"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bpmurray/node-red-dht-sensor.git"
+    "url": "https://github.com/bpmurray/node-red-contrib-dht-sensor.git"
   },
   "keywords": [
     "node-red",
@@ -22,17 +22,23 @@
   ],
   "license": "Apache 2.0",
   "bugs": {
-    "url": "https://github.com/bpmurray/node-red-dht-sensor/issues"
+    "url": "https://github.com/bpmurray/node-red-contrib-dht-sensor/issues"
   },
-  "homepage": "https://github.com/bpmurray/node-red-dht-sensor",
+  "homepage": "https://github.com/bpmurray/node-red-contrib-dht-sensor",
   "node-red": {
     "nodes": {
       "dht22": "dht22-node/dht22-node.js"
     }
   },
-  "_id": "node-red-dht-sensor@0.0.4",
-  "_shasum": "70f25c9c40b01e30c18fd56ac769feda1ea58b93",
-  "_from": "node-red-dht-sensor@",
+  "_id": "",
+  "_shasum": "",
+  "_from": "",
+  "_npmVersion": "",
+  "_npmUser": {
+  },
+  "_id": "node-red-contrib-dht-sensor@0.0.10",
+  "_shasum": "8b0492c0dcae95970a76bc19642577abb0ac1221",
+  "_from": "node-red-contrib-dht-sensor@",
   "_npmVersion": "1.4.9",
   "_npmUser": {
     "name": "bpmurray",
@@ -45,9 +51,9 @@
     }
   ],
   "dist": {
-    "shasum": "70f25c9c40b01e30c18fd56ac769feda1ea58b93",
-    "tarball": "http://registry.npmjs.org/node-red-dht-sensor/-/node-red-dht-sensor-0.0.4.tgz"
+    "shasum": "8b0492c0dcae95970a76bc19642577abb0ac1221",
+    "tarball": "http://registry.npmjs.org/node-red-contrib-dht-sensor/-/node-red-contrib-dht-sensor-0.0.10.tgz"
   },
   "directories": {},
-  "_resolved": "https://registry.npmjs.org/node-red-dht-sensor/-/node-red-dht-sensor-0.0.4.tgz"
+  "_resolved": "https://registry.npmjs.org/node-red-contrib-dht-sensor/-/node-red-contrib-dht-sensor-0.0.10.tgz"
 }
