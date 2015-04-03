@@ -1,0 +1,53 @@
+{
+  "author": {
+    "name": "Brendan Murray",
+    "email": "brendanpmurray@gmail.com",
+    "url": "http://coolfore.com/"
+  },
+  "name": "node-red-dht-sensor",
+  "version": "0.0.9",
+  "description": "Node-red node for node-dht-sensor",
+  "dependencies": {
+     "node-dht-sensor": "0.0.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bpmurray/node-red-dht-sensor.git"
+  },
+  "keywords": [
+    "node-red",
+    "sensor",
+    "dht11",
+    "dht22"
+  ],
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/bpmurray/node-red-dht-sensor/issues"
+  },
+  "homepage": "https://github.com/bpmurray/node-red-dht-sensor",
+  "node-red": {
+    "nodes": {
+      "dht22": "dht22-node/dht22-node.js"
+    }
+  },
+  "_id": "node-red-dht-sensor@0.0.4",
+  "_shasum": "70f25c9c40b01e30c18fd56ac769feda1ea58b93",
+  "_from": "node-red-dht-sensor@",
+  "_npmVersion": "1.4.9",
+  "_npmUser": {
+    "name": "bpmurray",
+    "email": "brendanpmurray@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "bpmurray",
+      "email": "brendanpmurray@gmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "70f25c9c40b01e30c18fd56ac769feda1ea58b93",
+    "tarball": "http://registry.npmjs.org/node-red-dht-sensor/-/node-red-dht-sensor-0.0.4.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/node-red-dht-sensor/-/node-red-dht-sensor-0.0.4.tgz"
+}
