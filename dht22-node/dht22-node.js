@@ -89,7 +89,7 @@ module.exports = function(RED) {
          
          msg.payload  = reading.temperature.toFixed(2);
          msg.humidity = reading.humidity.toFixed(2);
-         msg.topic    = node.name;
+         msg.topic    = node.topic || node.name;
 
          return msg;
       };

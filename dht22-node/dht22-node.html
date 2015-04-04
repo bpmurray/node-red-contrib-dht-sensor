@@ -104,7 +104,8 @@
 <script type="text/x-red" data-help-name="dht22">
    <p>Node to retrieve the status of a DHT11 or DHT22 sensor, either at
    startup, or at a predefined period, determined by an input message</p>
-   <p>Outputs a <b>msg</b> containing <b>msg.topic</b> and <b>msg.payload</b>.</p>
+   <p>Outputs a <b>msg</b> containing <b>msg.topic</b> which defaults to the
+   sensor name, and <b>msg.payload</b> containing the reading.</p>
 </script>
 
 <script type="text/javascript">
