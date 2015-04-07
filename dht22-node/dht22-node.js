@@ -110,5 +110,5 @@ module.exports = function(RED) {
    }
 
    // Register the node by name.
-   RED.nodes.registerType("dht22", dht22Sensor);
+   RED.nodes.registerType("rpi-dht22", dht22Sensor);
 }

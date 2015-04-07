@@ -27,7 +27,7 @@
   "homepage": "https://github.com/bpmurray/node-red-contrib-dht-sensor",
   "node-red": {
     "nodes": {
-      "dht22": "dht22-node/dht22-node.js"
+      "rpi-dht22": "dht22-node/dht22-node.js"
     }
   },
   "_id": "",

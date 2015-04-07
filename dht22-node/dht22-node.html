@@ -16,7 +16,7 @@
 
 
 <!-- Define the edit dialog.                       -->
-<script type="text/x-red" data-template-name="dht22">
+<script type="text/x-red" data-template-name="rpi-dht22">
 
     <div class="form-row">
         <label for="node-input-topic"><i class="fa fa-tasks"></i> Topic</label>
@@ -101,7 +101,7 @@
 
 
 <!-- Next, some simple help text is provided for the node.                   -->
-<script type="text/x-red" data-help-name="dht22">
+<script type="text/x-red" data-help-name="rpi-dht22">
    <p>Node to retrieve the status of a DHT11 or DHT22 sensor, either at
    startup, or at a predefined period, determined by an input message</p>
    <p>Outputs a <b>msg</b> containing <b>msg.topic</b> which defaults to the
@@ -109,11 +109,11 @@
 </script>
 
 <script type="text/javascript">
-    RED.nodes.registerType('dht22', {
+    RED.nodes.registerType('rpi-dht22', {
         category: 'Raspberry Pi', // the palette category
         defaults: {               // defines the editable properties of the node
             name:    {value: ""},
-            topic:   {value: "dht22"},
+            topic:   {value: "rpi-dht22"},
             dht:     {value: 22},
             pintype: {value: 1},
             pin:     {value: 4}
