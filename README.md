@@ -12,4 +12,4 @@ This is a [Node Red](http://nodered.org/) node to manage connection to a DHT11 o
 
 This node is added to the Raspberry Pi section.
 
-Note that this node requires that [node-dht-sensor](https://www.npmjs.com/package/node-dht-sensor) is installed and accessible from Node Red. 
+Note that this node requires that [node-dht-sensor](https://www.npmjs.com/package/node-dht-sensor) is installed and accessible from Node Red. Since this requires accesss to low-level parts of the Raspberry Pi, you must run your flow with superuser access.
