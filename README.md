@@ -1,4 +1,4 @@
-# node-red-dht-sensor
+# node-red-contrib-dht-sensor
 This is a [Node Red](http://nodered.org/) node to manage connection to a DHT11 or DHT22 sensor on a Raspberry Pi. It allows you to specify the variables that define the connections to the sensor. You can specify:
 * The topic of the message (not really a lot of use!).
 * The name of the node. This can be a unique value to tag the sensor, useful if you have multiple connected.
