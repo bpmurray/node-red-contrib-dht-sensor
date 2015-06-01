@@ -69,12 +69,9 @@ module.exports = function(RED) {
       }
 
 
-      var msg = {};
-      var reading;
-
       // Read the data & return a message object
-      this.read = function() {
-         var msg = {};
+      this.read = function(msgIn) {
+         var msg = msgIn ? msgIn : {};
          var reading  = { temperature : 100.0, humidity : 110.0 };
 
          if (this.dht === undefined || this.pin === undefined) {
@@ -84,9 +81,6 @@ module.exports = function(RED) {
             reading = sensorLib.readSpec(this.dht, this.pin);
          }
 
-         if (msg.error)
-            return null;
-         
          msg.payload  = reading.temperature.toFixed(2);
          msg.humidity = reading.humidity.toFixed(2);
          msg.topic    = node.topic || node.name;
@@ -96,17 +90,17 @@ module.exports = function(RED) {
 
       // respond to inputs....
       this.on('input', function (msg) {
-         msg = this.read();
+         msg = this.read(msg);
          
          if (msg)
             node.send(msg);
       });
 
-      var msg = this.read();
+   //   var msg = this.read();
 
-      // send out the message to the rest of the workspace.
-      if (msg)
-         this.send(msg);
+   //   // send out the message to the rest of the workspace.
+   //   if (msg)
+   //      this.send(msg);
    }
 
    // Register the node by name.
