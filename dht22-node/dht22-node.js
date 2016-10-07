@@ -78,7 +78,7 @@ module.exports = function(RED) {
             // Miscommunication - use silly values
          } else {
             // Read the data from the sensors
-            reading = sensorLib.readSpec(this.dht, this.pin);
+            reading = sensorLib.read(this.dht, this.pin);
          }
 
          msg.payload  = reading.temperature.toFixed(2);
