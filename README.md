@@ -13,3 +13,14 @@ This is a [Node Red](http://nodered.org/) node to manage connection to a DHT11 o
 This node is added to the Raspberry Pi section.
 
 Note that this node requires that [node-dht-sensor](https://www.npmjs.com/package/node-dht-sensor) is installed and accessible from Node Red. Since this requires accesss to low-level parts of the Raspberry Pi, you must run your flow with superuser access.
+
+Installing this node requires three steps:
+* Install the BCM2835 library from [here](http://www.airspayce.com/mikem/bcm2835/ "C library for Broadcom BCM 2835 as used in Raspberry Pi").
+* Install the node-dht-sensor dependency
+```bash
+sudo npm install -g node-dht-sensor
+```
+* Install this node
+```bash
+sudo npm install -g node-red-contrib-dht-sensor
+```
