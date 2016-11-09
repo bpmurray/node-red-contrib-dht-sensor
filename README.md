@@ -29,15 +29,15 @@ You can specify the following, as seen in the picture here:
     * the [wiringpi](http://wiringpi.com/) sequence, for revision 1 of the Pi
     * the wiringpi sequence, for revision 2 of the Pi (and A+ or B+)
 
-[Node configuration](https://github.com/bpmurray/node-red-contrib-dht-sensor/blob/master/dhtconfig.jpg?raw=true)
+![Node configuration](https://github.com/bpmurray/node-red-contrib-dht-sensor/blob/master/dhtconfig.jpg?raw=true)
 
 ### Using the node
 The node is added to the Raspberry Pi section of the Node-RED pallette, and it can be used in a flow as usual:
 
-[Node-RED flow](https://github.com/bpmurray/node-red-contrib-dht-sensor/blob/master/dhtflow.jpg?raw=true)
+![Node-RED flow](https://github.com/bpmurray/node-red-contrib-dht-sensor/blob/master/dhtflow.jpg?raw=true)
 
 The message returned includes the temperature as the payload, and the humidity as part of the message itself:
 
-[Returned message](https://github.com/bpmurray/node-red-contrib-dht-sensor/blob/master/dhtmsg.jpg?raw=true)
+![Returned message](https://github.com/bpmurray/node-red-contrib-dht-sensor/blob/master/dhtmsg.jpg?raw=true)
 
 Note that the temperature values is in &degree;C and the humidity values are % relative humidity.
