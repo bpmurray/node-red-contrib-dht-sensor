@@ -40,4 +40,4 @@ The message returned includes the temperature as the payload, and the humidity a
 
 ![Returned message](https://github.com/bpmurray/node-red-contrib-dht-sensor/blob/master/dhtmsg.jpg?raw=true)
 
-Note that the temperature values is in &degree;C and the humidity values are % relative humidity.
+Note that the temperature values is in &deg;C and the humidity values are % relative humidity.
