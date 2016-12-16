@@ -84,6 +84,8 @@ module.exports = function(RED) {
          msg.payload  = reading.temperature.toFixed(2);
          msg.humidity = reading.humidity.toFixed(2);
          msg.topic    = node.topic || node.name;
+         msg.location = node.name;
+         msg.sensorid = 'dht' + node.dht;
 
          return msg;
       };
