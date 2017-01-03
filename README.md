@@ -40,4 +40,8 @@ The message returned includes the temperature as the payload, and the humidity a
 
 ![Returned message](https://github.com/bpmurray/node-red-contrib-dht-sensor/blob/master/dhtmsg.jpg?raw=true)
 
-Note that the temperature values is in &deg;C and the humidity values are % relative humidity.
+
+### Notes:
+* This node requires that [node-dht-sensor](https://www.npmjs.com/package/node-dht-sensor) is installed and accessible from Node Red.
+* The temperature values is in &deg;C and the humidity values are % relative humidity.
+
