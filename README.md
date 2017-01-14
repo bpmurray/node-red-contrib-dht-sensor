@@ -36,8 +36,10 @@ The node is added to the Raspberry Pi section of the Node-RED pallette, and it c
 
 ![Node-RED flow](https://github.com/bpmurray/node-red-contrib-dht-sensor/blob/master/dhtflow.jpg?raw=true)
 
-The message returned includes the temperature as the payload, and the humidity as part of the message itself:
+The message returned includes the temperature as the payload, and the humidity and the device ID as part of the message itself:
 
 ![Returned message](https://github.com/bpmurray/node-red-contrib-dht-sensor/blob/master/dhtmsg.jpg?raw=true)
 
-Note that the temperature values is in &deg;C and the humidity values are % relative humidity.
+### Notes:
+* The temperature values is in &deg;C and the humidity values are % relative humidity.
+* If you're using an older release of Raspbian, you will have to run node-RED as root, otherwise the 

@@ -5,7 +5,7 @@
     "url": "http://coolfore.com/"
   },
   "name": "node-red-contrib-dht-sensor",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "description": "Node-red node for node-dht-sensor",
   "dependencies": {
      "node-dht-sensor": "*"
