@@ -42,4 +42,4 @@ The message returned includes the temperature as the payload, and the humidity a
 
 ### Notes:
 * The temperature values is in &deg;C and the humidity values are % relative humidity.
-* If you're using an older release of Raspbian, you will have to run node-RED as root, otherwise the 
+* If you're using an older release of Raspbian, you will have to run node-RED as root, otherwise you may run into problems with permissions.
