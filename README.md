@@ -40,6 +40,7 @@ The message returned includes the temperature as the payload, and the humidity a
 
 ![Returned message](https://github.com/bpmurray/node-red-contrib-dht-sensor/blob/master/dhtmsg.jpg?raw=true)
 
+While not having the humidity as part of the payload may seem awkward, it was done with the explicit intention to preserve compatability with the [node-red-controb-ds18b20-sensor](https://www.npmjs.com/package/node-red-contrib-ds18b20-sensor) node.
 ### Notes:
 * The temperature values is in &deg;C and the humidity values are % relative humidity.
 * If you're using an older release of Raspbian, you will have to run node-RED as root, otherwise you may run into problems with permissions.
