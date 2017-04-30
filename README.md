@@ -10,11 +10,11 @@ Installing this node requires three steps:
 * Install the BCM2835 library from [here](http://www.airspayce.com/mikem/bcm2835/ "C library for Broadcom BCM 2835 as used in Raspberry Pi").
 * Install the node-dht-sensor dependency
 ```bash
-sudo npm install -g node-dht-sensor
+sudo npm install --unsafe-perm -g node-dht-sensor
 ```
 * Install this node
 ```bash
-sudo npm install -g node-red-contrib-dht-sensor
+sudo npm install --unsafe-perm -g node-red-contrib-dht-sensor
 ```
 
 ### Configuring the node
@@ -41,6 +41,17 @@ The message returned includes the temperature as the payload, and the humidity a
 ![Returned message](https://github.com/bpmurray/node-red-contrib-dht-sensor/blob/master/dhtmsg.jpg?raw=true)
 
 While not having the humidity as part of the payload may seem awkward, it was done with the explicit intention to preserve compatability with the [node-red-controb-ds18b20-sensor](https://www.npmjs.com/package/node-red-contrib-ds18b20-sensor) node.
+### Problems?
+It is possible to run this as an ordinary user rather than root, but it requires that you update the version of the BCM2385 library to version 1.5 or later, and build it according to the instructions. Then you have to uninstall and reinstall the nodes:
+```bash
+sudo npm uninstall --unsafe-perm -g node-red-contrib-dht-sensor
+sudo npm uninstall --unsafe-perm -g node-dht-sensor
+
+sudo npm install --unsafe-perm -g node-dht-sensor
+sudo npm install --unsafe-perm -g node-red-contrib-dht-sensor
+```
+once you do this, you can run it as any user rather than as root.
+
 ### Notes:
 * The temperature values is in &deg;C and the humidity values are % relative humidity.
-* If you're using an older release of Raspbian, you will have to run node-RED as root, otherwise you may run into problems with permissions.
+* If you're using an older release of the DHT2385 driver, you will have to run node-RED as root, otherwise you may run into problems with permissions.
