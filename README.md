@@ -29,6 +29,9 @@ You can specify the following, as seen in the picture here:
     * the [wiringpi](http://wiringpi.com/) sequence, for revision 1 of the Pi
     * the wiringpi sequence, for revision 2 of the Pi (and A+ or B+)
 
+Note: If you're daft enough to select an earth (ground) pin, this will cause
+the Pi to freeze. 
+
 ![Node configuration](https://github.com/bpmurray/node-red-contrib-dht-sensor/blob/master/dhtconfig.jpg?raw=true)
 
 ### Using the node
