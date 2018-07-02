@@ -5,10 +5,10 @@
     "url": "http://coolfore.com/"
   },
   "name": "node-red-contrib-dht-sensor",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Node-red node for node-dht-sensor",
   "dependencies": {
-     "node-dht-sensor": "*"
+    "node-dht-sensor": "*"
   },
   "repository": {
     "type": "git",
@@ -29,12 +29,6 @@
     "nodes": {
       "rpi-dht22": "dht22-node/dht22-node.js"
     }
-  },
-  "_id": "",
-  "_shasum": "",
-  "_from": "",
-  "_npmVersion": "",
-  "_npmUser": {
   },
   "_id": "node-red-contrib-dht-sensor@0.0.10",
   "_shasum": "8b0492c0dcae95970a76bc19642577abb0ac1221",
