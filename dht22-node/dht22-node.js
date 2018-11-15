@@ -83,6 +83,8 @@ module.exports = function(RED) {
 
          msg.payload  = reading.temperature.toFixed(2);
          msg.humidity = reading.humidity.toFixed(2);
+         msg.isValid  = reading.isValid;
+         msg.errors   = reading.errors;
          msg.topic    = node.topic || node.name;
          msg.location = node.name;
          msg.sensorid = 'dht' + node.dht;
@@ -93,7 +95,7 @@ module.exports = function(RED) {
       // respond to inputs....
       this.on('input', function (msg) {
          msg = this.read(msg);
-         
+
          if (msg)
             node.send(msg);
       });
