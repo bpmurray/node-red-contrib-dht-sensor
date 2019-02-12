@@ -5,7 +5,7 @@
     "url": "http://coolfore.com/"
   },
   "name": "node-red-contrib-dht-sensor",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Node-red node for node-dht-sensor",
   "dependencies": {
     "node-dht-sensor": "*"
@@ -16,6 +16,15 @@
   },
   "keywords": [
     "node-red",
+    "iot",
+    "device",
+    "devices",
+    "raspberry",
+    "raspi",
+    "rpi",
+    "pi",
+    "temperature",
+    "humidity",
     "sensor",
     "dht11",
     "dht22"
