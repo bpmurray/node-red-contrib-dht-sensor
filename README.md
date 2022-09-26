@@ -55,6 +55,19 @@ sudo npm install --unsafe-perm -g node-red-contrib-dht-sensor
 ```
 once you do this, you can run it as any user rather than as root.
 
+### Docker Problems?
+If you encounter the messsage *TypeError: failed to initialize* when trying to read the sensor with node-red-contrib-dht-sensor package's node running
+in an IOTstack docker container, this may resolve the issue:
+
+* Edit Node Red's Dockerfile and add lines of code that install:
+   * BCM2835 library
+   * node-dht-sensor npm package
+   * node-red-contrib-dht-sensor package
+* Update *docker-compose.yml* as follows:
+   * Add a flag to run node-red docker in privileged mode
+   * Map */dev/mem/* just to be sure, to be sure
+
 ### Notes:
 * The temperature values is in &deg;C and the humidity values are % relative humidity.
 * If you're using an older release of the DHT2385 driver, you will have to run node-RED as root, otherwise you may run into problems with permissions.
+
