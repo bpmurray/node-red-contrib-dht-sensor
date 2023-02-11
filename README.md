@@ -70,4 +70,5 @@ in an IOTstack docker container, this may resolve the issue:
 ### Notes:
 * The temperature values is in &deg;C and the humidity values are % relative humidity.
 * If you're using an older release of the DHT2385 driver, you will have to run node-RED as root, otherwise you may run into problems with permissions.
+* Thanks to @hasenradball and @juanmartin for helping update this to support newer devices
 

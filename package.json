@@ -2,10 +2,10 @@
   "author": {
     "name": "Brendan Murray",
     "email": "brendanpmurray@gmail.com",
-    "url": "http://coolfore.com/"
+    "url": "http://brendansbeez.com/"
   },
   "name": "node-red-contrib-dht-sensor",
-  "version": "1.0.4",
+  "version": "1.5.0",
   "description": "Node-red node for node-dht-sensor",
   "dependencies": {
     "node-dht-sensor": "*"
@@ -42,7 +42,7 @@
   "_id": "node-red-contrib-dht-sensor@0.0.10",
   "_shasum": "8b0492c0dcae95970a76bc19642577abb0ac1221",
   "_from": "node-red-contrib-dht-sensor@",
-  "_npmVersion": "1.4.9",
+  "_npmVersion": "1.5.0",
   "_npmUser": {
     "name": "bpmurray",
     "email": "brendanpmurray@gmail.com"
@@ -55,8 +55,8 @@
   ],
   "dist": {
     "shasum": "8b0492c0dcae95970a76bc19642577abb0ac1221",
-    "tarball": "http://registry.npmjs.org/node-red-contrib-dht-sensor/-/node-red-contrib-dht-sensor-0.0.10.tgz"
+    "tarball": "http://registry.npmjs.org/node-red-contrib-dht-sensor/-/node-red-contrib-dht-sensor-1.5.0.tgz"
   },
   "directories": {},
-  "_resolved": "https://registry.npmjs.org/node-red-contrib-dht-sensor/-/node-red-contrib-dht-sensor-0.0.10.tgz"
+  "_resolved": "https://registry.npmjs.org/node-red-contrib-dht-sensor/-/node-red-contrib-dht-sensor-1.5.0.tgz"
 }
